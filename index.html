@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="shortcut icon" href="./img/pngwing.com (1).png" type="image/x-icon">
+    <title>Juego Adivinador</title>
+</head>
+<body>
+    <header>
+        <h1>Adivinar El Número</h1>
+        <h3>Elige Un Número Del 1 al 100</h3>
+    </header>
+    <main>
+                <div class="modal fade" id="modalInicio" tabindex="-1" role="dialog" aria-labelledby="modalInicioLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalInicioLabel">¡Bienvenido al Juego Adivinador!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="formularioBienvenida">
+                            <div class="form-group">
+                                <label for="nombreUsuarioModal">Introduce tu nombre para comenzar:</label>
+                                <input type="text" class="form-control" id="nombreUsuarioModal" required>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="botonComenzar">Comenzar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="juego">
+            <label for="entradaIntento">Introduce tu número:</label>
+            <input type="number" id="entradaIntento" class="form-control">
+            <button id="botonIntento" class="btn btn-primary">Enviar Intento</button>
+            <p id="areaMensajes"></p>
+            <div id="intentosPrevios"></div>
+            <p id="intentosRestantes"></p>
+            <p id="temporizador"></p>
+            <button id="botonReiniciar" class="btn btn-secondary">Reiniciar Juego</button>
+            <button id="botonMostrarOcultarHistorial" class="btn btn-info">Mostrar/Ocultar Historial</button>
+            <button id="botonBorrarHistorial" class="btn btn-danger">Borrar Historial</button>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
