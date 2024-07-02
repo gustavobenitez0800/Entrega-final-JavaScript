@@ -1,7 +1,4 @@
-node_modules/
+
 .env
-*.log
-/css/*.css
-/img/*.png
-/js/*.js
+
 package-lock.json

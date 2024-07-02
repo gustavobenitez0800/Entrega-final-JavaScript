@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(128, 0, 128, 0.685);
+    background-image: url('../img/pngwing.com.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 21px;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    margin: 10px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.966);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+.juego {
+    padding: 20px;
+    margin: 10px;
+    background-color: #000000ef;
+    color: rgba(255, 255, 255, 0.815);
+    border-radius: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.juego label,
+.juego input,
+.juego button,
+.juego p,
+.juego div {
+    margin: 10px 0;
+}
+
+#entradaIntento {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#botonIntento,
+#botonReiniciar,
+#botonMostrarOcultarHistorial,
+#botonBorrarHistorial {
+    margin: 10px;
+    border: 1px solid #FFC55A;
+    background-color: black;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+#botonIntento:hover,
+#botonReiniciar:hover,
+#botonMostrarOcultarHistorial:hover,
+#botonBorrarHistorial:hover {
+    border-color: #FFC55A;
+    background-color: white;
+    color: black;
+}
+
+#areaMensajes {
+    margin-top: 20px;
+}
+
+#temporizador {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.mensaje-emergente {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    z-index: 1000;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeInRotate {
+    from {
+        opacity: 0;
+        transform: rotate(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Media Queries */
+
+@media (min-width: 576px) {
+    header {
+        padding: 15px 25px;
+    }
+
+    .juego {
+        padding: 25px;
+        margin: 15px;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        padding: 20px 35px;
+        max-width: 600px;
+    }
+
+    .juego {
+        padding: 30px;
+        margin: 20px;
+        max-width: 500px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    #entradaIntento,
+    #botonIntento,
+    #botonReiniciar,
+    #botonMostrarOcultarHistorial,
+    #botonBorrarHistorial {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    header {
+        padding: 25px 45px;
+        max-width: 700px;
+    }
+
+    .juego {
+        padding: 35px;
+        margin: 25px;
+        max-width: 600px;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    #entradaIntento,
+    #botonIntento,
+    #botonReiniciar,
+    #botonMostrarOcultarHistorial,
+    #botonBorrarHistorial {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    header {
+        padding: 30px 55px;
+        max-width: 800px;
+    }
+
+    .juego {
+        padding: 40px;
+        margin: 30px;
+        max-width: 700px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    #entradaIntento,
+    #botonIntento,
+    #botonReiniciar,
+    #botonMostrarOcultarHistorial,
+    #botonBorrarHistorial {
+        font-size: 1.3rem;
+    }
+}
